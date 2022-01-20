@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container html {
+  background-color: #A2C7E5;
+}
+
+.container .hidden {
+  display: none;
+}
+
+.container .button {
+  width: 140px;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 0.2em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #ff8552;
+}
+
+.container .button:hover {
+  background-color: #ff4f06;
+}
+
+.container .button.disabled {
+  opacity: 0.5;
+}
+
+.container .button.disabled:hover {
+  background-color: #ff8552;
+}
+
+.container .form {
+  width: 400px;
+  margin: auto;
+  margin-top: 5em;
+  padding: 20px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  color: #33312E;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container .form .progress-bar {
+  width: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3.5em;
+}
+
+.container .form .progress-bar li.progress-bar__dot {
+  display: block;
+  width: 0.6em;
+  border-radius: 1000em;
+  height: 0.6em;
+  border: 0.2em solid #ff8552;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.container .form .progress-bar li.progress-bar__dot.full {
+  background-color: #ff8552;
+}
+
+.container .form .progress-bar li.progress-bar__connector {
+  display: block;
+  width: 5em;
+  border-radius: 1000em;
+  height: 0.1em;
+  background-color: #ff8552;
+  margin-top: 0.45em;
+}
+
+.container .form label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.container .form input {
+  width: 100%;
+  padding: 1.3em;
+  margin-bottom: 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #e6e6e6;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+.container .form input:focus {
+  border: none;
+}
+
+.container .form .button-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.container .form button#validate {
+  margin: auto;
+  background-color: #1A936F;
+  width: 12em;
+}
+
+.container .form button#validate:hover {
+  background-color: #12684e;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .container .form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
